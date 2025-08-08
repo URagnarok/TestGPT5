@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>巫术冒险游戏</title>
+    <title>Wizardry Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="game-container">
-        <canvas id="gameCanvas"></canvas>
-        <div id="controls">
-            <button id="startGame">开始游戏</button>
-            <button id="pauseGame">暂停游戏</button>
+        <h1>Wizardry Adventure</h1>
+        
+        <!-- Dungeon Map -->
+        <div id="dungeon-map"></div>
+
+        <!-- Stats Section -->
+        <div id="character-stats">
+            <h2>Character Stats</h2>
+            <p id="health">Health: 100</p>
+            <p id="mana">Mana: 50</p>
+            <p id="level">Level: 1</p>
         </div>
+
+        <!-- Inventory & Actions -->
+        <div id="actions">
+            <button id="attack">Attack</button>
+            <button id="use-spell">Use Spell</button>
+            <button id="open-inventory">Inventory</button>
+        </div>
+
+        <!-- Combat Result -->
+        <div id="combat-result"></div>
     </div>
-    <script src="game.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
